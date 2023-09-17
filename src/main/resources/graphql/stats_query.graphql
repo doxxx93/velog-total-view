@@ -1,0 +1,11 @@
+query GetStats($post_id: ID!) {
+    getStats(post_id: $post_id) {
+        total
+        count_by_day {
+            count
+            day
+            __typename
+        }
+        __typename
+    }
+}

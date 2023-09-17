@@ -1,0 +1,14 @@
+query UserTags($username: String) {
+    userTags(username: $username) {
+        tags {
+            id
+            name
+            description
+            posts_count
+            thumbnail
+            __typename
+        }
+        posts_count
+        __typename
+    }
+}
